@@ -12,6 +12,9 @@ You are tasked with building a File Tree UI given a list of File objects, consis
 
 If you solve this challenge and you still have more time, our follow-on task is to implement the ability to add new files to the file tree
 
+## Starting the app
+To start the project first install dependencies `npm install` then launch `npm run dev`
+
 # About this repo
 
 ## Running React
