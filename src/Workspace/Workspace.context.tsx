@@ -5,6 +5,16 @@ export type File = {
   contents: string
 }
 
+export type NestedFile = File & {
+  filename: string;
+};
+
+export type Folder = {
+  name: string;
+  files: NestedFile[];
+  folders: Folder[];
+};
+
 export const workspaceContext = createContext<{
   activeFile?: File,
   activateFile: React.Dispatch<React.SetStateAction<string>>,
